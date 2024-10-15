@@ -1,0 +1,113 @@
+site_name: Описание проверок local_checks из дистрибутива
+site_author: Vitaliy Filyuchkov
+site_url: 'https://alerts.pages.gitlab.corp.mail.ru'
+use_directory_urls: false
+nav:
+    - Описание алертов:
+       - Индекс: index.md
+       - Проверка статуса SAPI-сервисов: map_status.md
+       - Проверка доступности портов и HTTP-сервисов: network_check.md
+       - Проверка логов на наличие ошибок: sapigine_links_mon.md
+       - Проверка наличия дублирующихся IP-адресов: weave_duplicate_ip_checks.md
+       - Проверка статуса соединений между узлами: weave_mesh.md
+       - Проверка SSL-сертификатов: check_ssl.md
+       - Проверка состояния узлов и сервисов в Consul: consul-health.md
+       - Проверка локального выполнения нескольких команд или сценариев, регистрация их результатов, и передача метрик в Prometheus: exec_local_check.md
+       - Проверка доступности и корректности работы Grafana и ее API: grafana_mon.md
+       - Проверка состояния conntrack: ip_conntrack.md
+theme:
+  name: 'material'
+  language: ru
+  favicon: assets/images/logo.png
+  logo: assets/images/logo.png
+  palette:
+    scheme: preference
+    primary: 'blue'
+    accent: 'blue'
+  font: false
+#    text: 'Roboto'
+#    code: 'Roboto Mono'
+  features:
+    - navigation.tabs # навигация вверху страницы
+    - search.highlight
+    - toc.integrate
+    - header.autohide
+    - search.suggest # чтобы mkdocs давал поисковые подсказки к запросу
+  include_search_page: false
+  search_index_only: true
+
+repo_name: 'Alerts Description'
+# repo_url: https://gitlab.corp.mail.ru/imdevops/onpremise/alerts-description
+repo_url: https://gitlab.corp.mail.ru/imdevops/onpremise/alerts-description/-/tree/progress
+markdown_extensions:
+    - markdown.extensions.toc:
+       permalink: true
+       slugify: !!python/name:pymdownx.slugs.uslugify_cased
+       toc_depth: 2
+    - markdown.extensions.admonition
+    - markdown.extensions.attr_list
+    - markdown.extensions.codehilite:
+        linenums: true
+    - pymdownx.arithmatex
+    - pymdownx.betterem:
+        smart_enable: all
+    - pymdownx.caret
+    - pymdownx.critic
+    - pymdownx.details
+    - pymdownx.emoji:
+        emoji_index: !!python/name:pymdownx.emoji.twemoji
+        emoji_generator: !!python/name:pymdownx.emoji.to_svg
+    - pymdownx.inlinehilite
+    - pymdownx.keys
+    - pymdownx.magiclink
+    - pymdownx.mark
+    - pymdownx.smartsymbols
+    - pymdownx.superfences:
+         # make exceptions to highlighting of code:
+       custom_fences:
+         - name: mermaid
+           class: mermaid
+           format: !!python/name:mermaid2.fence_mermaid_custom
+    - pymdownx.tasklist:
+        custom_checkbox: true
+        clickable_checkbox: true
+    - pymdownx.tilde
+    - markdown.extensions.def_list
+    - markdown.extensions.footnotes
+    - markdown.extensions.meta
+    - pymdownx.snippets:
+        check_paths: true
+    - pymdownx.tabbed
+    - admonition
+
+plugins:
+  - search:
+      separator: '[\s\-\.]+'
+      lang:
+        - en
+        - ru
+  - git-revision-date-localized:
+      fallback_to_build_date: true
+  - awesome-pages:
+      collapse_single_pages: false
+  - minify:
+      minify_html: true
+  - mermaid2:
+      version: '10.1.0'
+      arguments:
+        securityLevel: 'loose'
+        theme: 'dark'
+        themeVariables:
+          primaryColor: '#BB2528'
+          primaryTextColor: '#fff'
+          primaryBorderColor: '#7C0000'
+          lineColor: '#F8B229'
+          secondaryColor: '#006100'
+          tertiaryColor: '#fff'
+
+extra_css:
+  - 'assets/css/css.css'
+extra_javascript:
+  - assets/javascripts/tablesort.min.js
+  - assets/javascripts/tables.js
+  - assets/javascript/mermaid.esm.min.mjs

@@ -1,0 +1,154 @@
+:root [data-md-color-scheme="default"] {
+  /* шрифты для отрисовки текста на сайте и в экспортируемом PDF */
+  --md-text-font: "VK Sans Display";
+  --md-code-font: "Roboto Mono";
+/*  --md-footer-fg-color: #000000;*/
+/*  --md-footer-bg-color: #00D3E6;*/
+
+  --md-primary-fg-color: #0077FF;
+  --md-accent-fg-color: #00D3E6;
+}
+
+.md-header {
+  --md-primary-fg-color: #FFFFFF;
+  --md-primary-bg-color: #000000;
+}
+
+
+.markdown-body .task-list-item {
+    list-style-type: none !important;
+}
+
+.markdown-body .task-list-item input[type="checkbox"] {
+    margin: 0 4px 0.25em -20px;
+    vertical-align: middle;
+}
+
+.md-typeset {
+    font-size: .80rem;
+}
+
+.md-typeset table:not([class]) {
+    font-size: .70rem;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  font-size: 16px
+}
+
+.md-typeset .admonition.note {
+    border-color: #0077FF;
+}
+
+.md-typeset .admonition.info {
+    border-color: #00D9ED;
+}
+
+.md-typeset .note>.admonition-title:before {
+    background-color: #0077FF;
+}
+
+.md-typeset .info>.admonition-title:before {
+    background-color: #00D9ED;
+}
+
+
+.md-typeset h2 {
+  font-size: 24pt !important;
+  font-weight: 700;
+  border-bottom: 1px solid #c6c6c6;
+}
+.md-typeset h3 {
+    font-size: 20pt !important;
+  font-weight: 700;
+}
+.md-typeset h4 {
+  font-weight: 700;
+  font-size: 18pt !important;
+}
+.md-typeset h5 {
+  font-weight: 700;
+  font-size: 16pt !important;
+  text-transform: none !important;
+  color: #000000 !important;
+}
+
+.md-search {
+  left: -110px;
+}
+
+table, th, td {
+  border: 0.5px solid lightgray;
+  border-collapse: collapse;
+}
+
+@font-face {
+    font-family: VK Sans Display;
+    src: url(assets/fonts/VK_Sans_Display_Bold.710bc371.woff2) format("woff2"),url(assets/fonts/VK_Sans_Display_Bold.ff08dca7.woff) format("woff");
+    font-weight: 700;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: VK Sans Display;
+    src: url(assets/fonts/VK_Sans_Display_DemiBold.d124363b.woff2) format("woff2"),url(assets/fonts/VK_Sans_Display_DemiBold.fc7db809.woff) format("woff");
+    font-weight: 600;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: VK Sans Display;
+    src: url(assets/fonts/VK_Sans_Display_Medium.2561a4da.woff2) format("woff2"),url(assets/fonts/VK_Sans_Display_Medium.28e6b932.woff) format("woff");
+    font-weight: 500;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: VK Sans Display;
+    src: url(assets/fonts/VK_Sans_Display_Regular.be29baa2.woff2) format("woff2"),url(assets/fonts/VK_Sans_Display_Regular.8c5c037e.woff) format("woff");
+    font-weight: 400;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: VK Sans Display;
+    src: url(assets/fonts/VK_Sans_Display_Light.51dd9008.woff2) format("woff2"),url(assets/fonts/VK_Sans_Display_Light.c9cb729b.woff) format("woff");
+    font-weight: 300;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(assets/fonts/RobotoMonoThin.a50e89d2.woff) format("woff");
+    font-weight: 100;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(assets/fonts/RobotoMonoLight.939357ba.woff) format("woff");
+    font-weight: 300;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(assets/fonts/RobotoMonoRegular.01f6eb6b.woff) format("woff");
+    font-weight: 400;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(assets/fonts/RobotoMonoMedium.0d0476d2.woff) format("woff");
+    font-weight: 500;
+    font-display: fallback
+}
+
+@font-face {
+    font-family: Roboto Mono;
+    src: url(assets/fonts/RobotoMonoBold.57c05b32.woff) format("woff");
+    font-weight: 700;
+    font-display: fallback
+}
