@@ -4,11 +4,10 @@ site_url: 'https://alerts.pages.gitlab.corp.mail.ru'
 use_directory_urls: false
 nav:
     - Описание алертов:
-       - Индекс: index.md
-       - Проверка статуса SAPI-сервисов: map_status.md
-       - Проверка доступности портов и HTTP-сервисов: network_check.md
-       - Проверка логов на наличие ошибок: sapigine_links_mon.md
-       - Проверка наличия дублирующихся IP-адресов: weave_duplicate_ip_checks.md
+       - aionr & aiomaxnr: fs/aionr & aiomaxnr.md
+       - filemax & filenr: fs/filemax & filenr.md
+       - nr_open: fs/nr_open.md
+       - pipeuserpagessoft: fs/pipeuserpagessoft.md
        - Проверка статуса соединений между узлами: weave_mesh.md
        - Проверка SSL-сертификатов: check_ssl.md
        - Проверка состояния узлов и сервисов в Consul: consul-health.md
