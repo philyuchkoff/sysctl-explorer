@@ -3,7 +3,7 @@ site_author: Vitaliy Filyuchkov
 site_url: 'https://alerts.pages.gitlab.corp.mail.ru'
 use_directory_urls: false
 nav:
-    - Описание алертов:
+    - FS:
        - aionr & aiomaxnr: fs/aionr & aiomaxnr.md
        - filemax & filenr: fs/filemax & filenr.md
        - nr_open: fs/nr_open.md
